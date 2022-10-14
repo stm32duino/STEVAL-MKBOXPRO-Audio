@@ -2,7 +2,7 @@
 
 Arduino library to support the [MP23DB01HP](https://www.st.com/en/mems-and-sensors/mp23db01hp.html) digital microphone.
 Currently, this library works only with the STEVAL board.
-It requires a [STM32 Core](https://github.com/stm32duino/Arduino_Core_STM32) equal to or greater than version 2.3.1.
+It requires a [STM32 Core](https://github.com/stm32duino/Arduino_Core_STM32) equal to or greater than version X.Y.Z.
 
 ## API
 
