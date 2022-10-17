@@ -245,7 +245,7 @@ void HAL_MDF_MspInit(MDF_HandleTypeDef *hmdf)
     PeriphClkInit.PLL3.PLL3FRACN = 0;
     PeriphClkInit.PLL3.PLL3ClockOut = RCC_PLL3_DIVQ;
     if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK) {
-      Error_Handler ();
+      Error_Handler();
     }
 
     __HAL_RCC_ADF1_CONFIG(RCC_ADF1CLKSOURCE_PLL3);
