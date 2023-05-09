@@ -1,12 +1,12 @@
-# STEVAL Audio
+# STEVAL-MKBOXPRO Audio
 
 Arduino library to support the [MP23DB01HP](https://www.st.com/en/mems-and-sensors/mp23db01hp.html) digital microphone.
-Currently, this library works only with the STEVAL board.
-It requires a [STM32 Core](https://github.com/stm32duino/Arduino_Core_STM32) equal to or greater than version X.Y.Z.
+Currently, this library works only with the STEVAL-MKBOXPRO board.
+It requires a [STM32 Core](https://github.com/stm32duino/Arduino_Core_STM32) equal to or greater than version 2.6.0.
 
 ## API
 
-This library can be used to record PCM audio on STEVAL board.
+This library can be used to record PCM audio on STEVAL-MKBOXPRO board.
 
 After including `PCM.h`, initialize the library by calling `PCM.Begin`:
 
@@ -80,7 +80,8 @@ void loop()
 ## More Info
 
 Source files can be found at
-https://github.com/stm32duino/STEVAL-Audio
+https://github.com/stm32duino/STEVAL-MKBOXPRO-Audio
 
-Take a look at STEVAL examples applications at
-https://github.com/stm32duino/STEVAL-Examples
+
+Take a look at STEVAL-MKBOXPRO examples applications at
+https://github.com/stm32duino/STEVAL-MKBOXPRO-Examples
