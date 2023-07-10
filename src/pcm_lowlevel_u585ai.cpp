@@ -159,7 +159,7 @@ int pcm_lowlevel_stop()
     ret = PCM_ERROR;
   }
 
-  return PCM_OK;
+  return ret;
 }
 
 /**
@@ -232,7 +232,8 @@ void HAL_MDF_MspInit(MDF_HandleTypeDef *hmdf)
 
   if (hmdf->Instance == DMIC_ONBOARD_FILTER) {
     /** Initializes the peripherals clock */
-    RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
+    RCC_PeriphCLKInitTypeDef PeriphClkInit;
+    memset(&PeriphClkInit, 0x0, sizeof(RCC_PeriphCLKInitTypeDef));
     PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADF1;
     PeriphClkInit.Adf1ClockSelection = RCC_ADF1CLKSOURCE_PLL3;
     PeriphClkInit.PLL3.PLL3Source = RCC_PLLSOURCE_HSE;

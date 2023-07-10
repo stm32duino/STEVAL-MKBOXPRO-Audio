@@ -238,6 +238,7 @@ int PCMClass::Stop()
 
 __attribute__((weak)) int pcm_lowlevel_init(uint32_t sampleRate)
 {
+  (void)sampleRate;
   return PCM_ERROR;
 }
 
